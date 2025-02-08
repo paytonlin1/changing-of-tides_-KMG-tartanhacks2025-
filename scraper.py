@@ -13,4 +13,9 @@ def open_html(path):                        # Open html file
 
 html=open_html('google_com')
 
+
 url = "https://tide.com/en-us/shop"
+
+tide = r.get(url)
+
+print(tide.content)                         # not working idk why gives me "AttributeError: module 'requests' has no attribute 'content'"
