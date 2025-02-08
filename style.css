@@ -209,6 +209,27 @@ p1 {
     
     
 }
+
+.itembox:hover {
+    animation-name: grownospin;
+    animation-timing-function: cubic-bezier(0,.8,.44,.98);
+    animation-duration:1s;
+}
+
+@keyframes grownospin{
+    0%{
+        scale: 1;
+    }
+
+    50%{
+        scale: 1.1;
+    }
+
+    100% {
+        scale: 1;
+        
+    }
+}
 .item {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
