@@ -46,7 +46,7 @@ def hello_world():
 @app.route('/nextproduct')
 def next_product():
     rand_product = random.randint(0,2)
-    return render_template('product.html', price=prices[rand_product], image=images[rand_product])
+    return render_template('product.html', price=price[rand_product], image=image[rand_product])
 
 if __name__ == '__main__':
     serve(app, host="0.0.0.0", port=8000)
