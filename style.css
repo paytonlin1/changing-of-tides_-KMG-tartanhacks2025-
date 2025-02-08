@@ -1,0 +1,284 @@
+body,html { 
+    height: 100%;
+    margin: 0;
+   
+}
+body {
+    position: relative;
+    min-height: 100%;
+
+}
+body::before{
+    position: absolute;
+    content:' ';
+    top: 0; left: 0; right: 0; bottom: 0;
+    background:url(https://s7d1.scene7.com/is/image/CENODS/20220729lnp1-pods?$responsive$&wid=700&qlt=90,0&resMode=sharp2),
+    linear-gradient(180deg, rgb(255, 220, 227), rgb(244, 172, 183));
+    
+    background-position:center;
+    background-blend-mode: overlay;
+    background-repeat: repeat;
+    background-size: cover;
+
+    min-height:100vh;
+
+    opacity: 0.3;
+    z-index:-1;
+}
+    
+
+
+
+
+h1 {
+    color: rgb(157, 129, 137);
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    animation-name: slideToLeft;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0,.8,.44,.98);
+}
+
+#poopoo {
+    display: flex;
+    margin: 25px;
+    flex-flow: column wrap;
+    gap: 20px;
+    justify-content: space-around;
+    align-content: space-around;
+    animation-name: slideToLeft;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0,.8,.44,.98);
+}
+
+@keyframes slideToLeft {
+    from {
+        opacity: 0%;
+        transform: translateX(50%);
+    }
+}
+
+p1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    text-decoration-style: wavy;
+    color:rgb(157, 129, 137);
+    font-size:x-large;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    animation-name: slideToLeft;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0,.8,.44,.98);
+
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flippy {
+    background-color: transparent;
+    width: 250px;
+    height: 100 px;
+    perspective: 1000px;
+    position: relative;
+}
+
+.flip-box-inner {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    text-shadow: 0cqmax;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    text-decoration-style: wavy;
+    color:rgb(157, 129, 137);
+    text-decoration: wavy;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flippy:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+    position: inherit;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+.flip-box-back {
+    transform: rotateY(180deg);
+}
+
+
+.pod {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    animation-name: growIn;
+    animation-timing-function: cubic-bezier(0,.8,.44,.98);
+    animation-duration: 1.2s;
+
+
+}
+
+.pod:hover {
+    animation-duration: 2s;
+    animation-name: grow;
+    animation-timing-function: ease-in-out;
+    transform-origin: center;
+
+}
+@keyframes growIn {
+    from {
+        transform: scale(0);
+        opacity: 0%;
+    }
+}
+
+@keyframes grow {
+    0%{
+        scale: 1;
+        transform: rotate(0deg);
+    }
+
+    50%{
+        scale: 1.5;
+    }
+
+    100% {
+        scale: 1;
+        transform: rotate(360deg);
+        
+    }
+}
+
+.container {
+    display: flex;
+    margin: 25px;
+    flex-flow: column wrap;
+    gap: 20px;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+    
+    animation-name: growIn;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0,.8,.44,.98);
+
+
+    
+}
+
+.container2{
+    display: flex;
+    margin: 25px;
+    flex-flow: row nowrap;
+    gap: 20px;
+    justify-content: center;
+    align-content: center ;
+    align-items: center;
+    animation-name: growIn;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0,.8,.44,.98);
+    
+}
+
+.itembox {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color:rgb(157, 129, 137);
+
+    align-content: center;
+    padding: 30px;
+    text-decoration-style: wavy;
+    background-color:rgb(255, 220, 227);
+    box-shadow: 5px 5px 20px rgb(204, 159, 172);
+    border-radius:20px;
+    
+    
+}
+
+.itembox:hover {
+    animation-name: grownospin;
+    animation-timing-function: cubic-bezier(0,.8,.44,.98);
+    animation-duration:1s;
+}
+
+@keyframes grownospin{
+    0%{
+        scale: 1;
+    }
+
+    50%{
+        scale: 1.1;
+    }
+
+    100% {
+        scale: 1;
+        
+    }
+}
+.item {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color:rgb(157, 129, 137);
+
+    align-content: center;
+    padding: 30px;
+}
+
+.fun_fact {
+    display: none;
+    color:rgb(204, 159, 172);
+    padding: 10px;
+    animation-name: slideToLeft;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0,.8,.44,.98);
+
+}
+
+
+#prompt {
+    position: relative;
+    animation-name: oscillate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:infinite;
+
+}
+
+@keyframes oscillate {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 50px;
+    }
+    100% {
+        left: 0;
+    }
+
+}
+
+.button {
+    background-color: rgb(255, 229, 217);
+    animation-name: growIn;
+    animation-timing-function:  cubic-bezier(0,.8,.44,.98);
+    border-radius: 20px;
+}
+
+.button:hover {
+    animation-name: grownospin;
+    color:rgb(244, 172, 183);
+}
