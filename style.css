@@ -18,3 +18,22 @@ p {
     margin-left: auto;
     margin-right: auto;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: wavy;
+    text-decoration-color: aliceblue;
+    background-color:rgb(26, 28, 142)
+}
+
+li { 
+    float: left;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    background-color:rgb(134, 134, 211);
+}
