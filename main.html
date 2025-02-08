@@ -12,7 +12,7 @@
 <div class="container2">
 
    
-        <div class = "flippy">
+    <div class = "flippy">
         <div class = "flip-box-inner">
             <div class = "flip-box-front">
                 <img src="https://images.ctfassets.net/xsotn7jngs35/2mEvR5cDd9toH60azGZX0X/e085d37b427f9a3c2b1defe2d17181c2/ed54348cbb154deaabe99494c0ebca6f"
@@ -23,7 +23,7 @@
                 <p>YYAASS</p>
             </div>
         </div>
-    </div>  
+    </div>      
 
 
 
@@ -39,6 +39,9 @@
 
 
     <div class= "container2">
+        <div class="item">
+            <img src="https://media.tenor.com/Gg6TH2YU9SMAAAAi/ramen-cute-ramen.gif" style="width:100%;height:auto">
+        </div>
         <div class ="itembox">
             <div class="container">
             <img src="https://i.postimg.cc/yxCTrz4d/Untitled-Artwork.png"style="width:20%;height:fit-content"padding="20px">
@@ -52,9 +55,12 @@
             <div class="container">
                 <img src="https://i.postimg.cc/yxCTrz4d/Untitled-Artwork.png"style="width:20%;height:fit-content">
             </div>
+            
     </div>
   
-        
+        <div class="item">
+                <img src="https://media.tenor.com/LR0dQvR_0-oAAAAi/hello-kitty-pixel-art.gif"style="width:100%;height:auto">
+            </div>
 
     </div>
 
@@ -65,7 +71,9 @@
                 Text text text text text?
                 </h2>
             </div>
-            
+            <div class="item">
+                <img src="https://media.tenor.com/aL61epgjvnkAAAAi/strawberry.gif " style="width:100%;height:auto"margin="0px">
+            </div>
             <div class="item">
             <img src = "https://ipcdn.freshop.com/resize?url=https://images.freshop.com/00037000930433/b746cd7c325877276ba0024df53fdeb4_large.png&width=512&type=webp&quality=90" style="width:150px;height:170px">
             </div>
@@ -143,12 +151,7 @@
                 const blocks = document.querySelectorAll('.fun_fact');
                 blocks.forEach(block => block.style.display ='none');
                 click.style.display='none';
-                const factBox = document.getElementById('fax');
-
-                factBox.classList.add('growIn');
-                factBox.addEventListener('animationend',function(){
-                    factBox.classList.remove('growIn');
-                }) 
+               
 
                 const randomIndex = Math.floor(Math.random() *blocks.length);
 

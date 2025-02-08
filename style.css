@@ -1,9 +1,31 @@
 body,html { 
-    height: auto;
+    height: 100%;
     margin: 0;
-    background:linear-gradient(180deg, rgb(255, 220, 227), rgb(244, 172, 183));
    
 }
+body {
+    position: relative;
+    min-height: 100%;
+
+}
+body::before{
+    position: absolute;
+    content:' ';
+    top: 0; left: 0; right: 0; bottom: 0;
+    background:url(https://s7d1.scene7.com/is/image/CENODS/20220729lnp1-pods?$responsive$&wid=700&qlt=90,0&resMode=sharp2),
+    linear-gradient(180deg, rgb(255, 220, 227), rgb(244, 172, 183));
+    
+    background-position:center;
+    background-blend-mode: overlay;
+    background-repeat: repeat;
+    background-size: cover;
+
+    min-height:100vh;
+
+    opacity: 0.3;
+    z-index:-1;
+}
+    
 
 
 
@@ -206,11 +228,6 @@ p1 {
 
 }
 
-#fax {
-    animation-name: growIn;
-    animation-duration: 1s;
-    animation-timing-function: cubic-bezier(0,.8,.44,.98);
-}
 
 #prompt {
     position: relative;
