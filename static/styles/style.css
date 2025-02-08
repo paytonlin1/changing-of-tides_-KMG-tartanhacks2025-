@@ -270,3 +270,15 @@ p1 {
     }
 
 }
+
+.button {
+    background-color: rgb(255, 229, 217);
+    animation-name: growIn;
+    animation-timing-function:  cubic-bezier(0,.8,.44,.98);
+    border-radius: 20px;
+}
+
+.button:hover {
+    animation-name: grownospin;
+    color:rgb(244, 172, 183);
+}
