@@ -1,5 +1,5 @@
 body { 
-    background-color: rgb(225, 234, 108);
+    background-color: rgb(249, 243, 162);
 }
 
 h1 {
@@ -8,9 +8,15 @@ h1 {
     font-family: cursive;
 }
 
-p {
+p1 {
     font-family: Impact;
-    
+    text-align: center;
+    text-decoration-style: wavy;
+    font-size:x-large;
+    border-radius: 500px;
+    border-color:rgb(47, 86, 213);
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .center {
@@ -19,21 +25,18 @@ p {
     margin-right: auto;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-decoration: wavy;
-    text-decoration-color: aliceblue;
-    background-color:rgb(26, 28, 142)
-}
-
-li { 
+.topnav a {
     float: left;
+    color:rgb(47, 86, 213);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: wavy;
+    font-size: 17px;
+    font-family: Impact;
 }
 
-a {
-    display: block;
-    padding: 8px;
-    background-color:rgb(134, 134, 211);
+.topnav a:hover {
+    background-color:rgb(147, 178, 240);
+    color: black;
 }
+
